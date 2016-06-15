@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+    <title>GM Main html</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+
+    <!-- Font Awesome base (minified) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- viewport settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+</head>
+
+
+<body>
+
+
+  <!-- optional  -->
+<section class="center-content">
+
+
+<!--tooltips -->
+<button class="btn_circle field-tip" name="button">
+
+  <!-- hover tooltips -->
+  <span class="field-tip">
+      <span class="tip-content">Put help text in here!</span>
+  </span>
+    <!-- hover tooltips -->
+
+</button>
+<!--tooltips -->
+
+
+
+<!-- google maps api -->
+<input type="text" class="pesquisa" id="autocomplete" name="autocomplete" placeholder="Digite um endereço para encontrar os locais de vacinação...">
+
+</input>
+<button type="submit" class="button" id="btn-srch" onclick="ga('send', 'event', 'Mapa', 'Procurar', 'Clinicas', '1');">
+<i class="fa fa-search" aria-hidden="true"></i>
+  Pesquisar</button>
+
+
+  </section>
+<div class="map" id="mapa" style="height:15em;">
+
+</div>
+
+<!-- google maps api -->
+
+<script src="js/maps.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDb-n7KCs2HEabp1jRSU7rG9DNXrUY1zYo&amp;callback=initMap&amp;libraries=places"></script>
+
+
+
+
+
+
+
+
+
+
+<!--
+
+lista de tasks site omron   [v]
+* inserção do mapa com os pontos e caixa de busca [V]
+* diminuir imagem seção produtos (banner, só gerar novamente e substituir) []
+* eliminar aside [V]
+* box flutuante vai virar pop-up para comparativo de produtos
+* Tooltip nos ícones dos produtos [V]
+* “Saiba onde Comprar [v]
+*  Destacar Imagens do Post (trocar) []
+*  Desmembrar Exibição das Áreas Notícias e Eventos (somente noticias) [v]
+*  Reposicionar Distribuição e Mídia Kit para o Footer [v]
+* remover barra preta [v]
+*
+
+
+
+******************************************************************************************************************************************************
+modificação menu
+
+ <ul>
+  <li class="first">
+    <a href="/pt_BR/category/"><span>Produtos</span></a>
+    <ul class="submenu">
+      <li class="first"><a href="/pt_BR/category/monitores-de-pressao" class="i-arrow-right"> Monitores de Pressão</a></li>
+      <li><a href="/pt_BR/category/inaladores-nebulizadores" class="i-arrow-right"> Inaladores / Nebulizadores</a></li>
+      <li><a href="/pt_BR/category/termometros" class="i-arrow-right"> Termômetros</a></li>
+      <li><a href="/pt_BR/category/fitness" class="i-arrow-right"> Active Health</a></li>
+      <li class="last"><a href="/pt_BR/category/alivio-da-dor" class="i-arrow-right"> Alívio da Dor</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="/pt_BR/disease/"><span>Saúde</span></a>
+    <ul class="submenu">
+      <li class="first"><a href="/pt_BR/disease/hipertensao/show" class="i-arrow-right">Hipertensão</a></li>
+      <li><a href="/pt_BR/disease/doencas-respiratorias/show" class="i-arrow-right">Doenças respiratórias</a></li>
+      <li><a href="/pt_BR/disease/temperatura-corporal-e-febre/show" class="i-arrow-right">Temperatura corporal e febre</a></li>
+      <li><a href="/pt_BR/disease/controle-de-peso/show" class="i-arrow-right">Controle de peso</a></li>
+      <li class="last"><a href="/pt_BR/medical_note/" class="pro">Palavra do doutor</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="/pt_BR/news/"><span>Notícias e eventos</span></a>
+    <ul class="submenu">
+      <li class="first"><a href="/pt_BR/news/news" class="i-arrow-right">Notícia</a></li>
+      <li class="last"><a href="/pt_BR/event/" class="i-arrow-right">Eventos</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="/pt_BR/company_information/"><span>Empresa</span></a>
+  </li>
+  <li class="last">
+    <a href="/pt_BR/support/"><span>Suporte</span></a>
+  </li>
+  <li class="destaque">
+    <a href="/pt_BR/news/"><span>Onde Comprar</span></a>
+  </li>
+</ul>
+******************************************************************************************
+
+******************************************************************************************
+css modificação menu
+
+li.destaque {
+    background-color: #003569;
+    border: solid 1px #003569;
+    border-top: solid 1px #003569 !important;
+}
+******************************************************************************************
+
+
+******************************************************************************************
+modificação footer (adicionar links)
+
+
+<li class="columna columna3">
+  <h3>Sobre OMRON</h3>
+  <ul>
+    <li class="first"><a href="/pt_BR/company_information/">Informações sobre a empresa</a></li>
+    <li><a href="/pt_BR/company-profile">Perfil de companhia</a></li>
+    <li class="last"><a href="/pt_BR/career/">Jobs</a></li>
+    <li class="first"><a href="/pt_BR/company_information/">Distribuição</a></li>
+    <li class="first"><a href="/pt_BR/company_information/">Midia Kit</a></li>
+    <li class="first"><a href="/pt_BR/company_information/">FAQ</a></li>
+  </ul>
+  <p></p>
+</li>
+************************************************************************************************************************
+
+
+
+******************************************************************************************
+ELIMINAR
+<aside class="sidebar" style="min-height: 1482px;">
+
+  após a eliminação altere a largura do container do conteudo central
+  (article class="main-content")
+  .main-content {
+    width: 100%;
+    float: left;
+}
+******************************************************************************************
+
+
+******************************************************************************************
+area de produtos, após eliminar o widget (aside) AUMENTAR O CONTAINER E CENTRALIZAR O CONTEUDO
+.main-content {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+******************************************************************************************
+
+
+************************************************************
+remover submenu de noticias e eventos
+************************************************************
+
+
+******************************************************************************************
+centralizar imagem do post
+.products-image, .event-image {
+    width: 100%;
+}
+
+.main-content {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+**********************************************************************************
+
+
+                  INSERIR BLOCO PARA O MAPA 
+**********************************************************************************************************
+<article class="VIDEO-CMS BLOCKES block_3 wrap opcion_img_right clearfix" style="background: #484343;">
+    <article class="wrap">
+    </article>
+</article>
+***********************************************************************************************************
+
+
+
+
+
+
+
+
+         -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>

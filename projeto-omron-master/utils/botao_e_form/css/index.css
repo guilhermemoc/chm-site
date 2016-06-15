@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.center-content {
+  width: 100%;
+  max-width: 130em;
+  margin: 0 auto;
+  position: relative; }
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #075F58;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  body .menu-area {
+    width: 100%;
+    height: 10em;
+    line-height: 5em;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    font-family: FontAwesome;
+    display: block;
+    text-align: center; }
+    body .menu-area .button {
+      background: transparent;
+      border: dotted 1px #fff;
+      border-radius: 4px;
+      width: 5em;
+      height: 1.8em;
+      display: inline-block;
+      text-align: center;
+      margin: 1em 4em;
+      transition: transform 0.3s ease-in-out; }
+      body .menu-area .button:hover {
+        transform: scale(1.1, 1.1);
+        cursor: pointer; }
+      body .menu-area .button:focus {
+        outline: none !important; }
+      body .menu-area .button i {
+        font-family: FontAwesome;
+        font-style: normal;
+        color: white;
+        font-weight: 100; }
+      body .menu-area .button p {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1em;
+        color: white; }
+  body .overlay {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    /*--------------------------------------------------------------------------------- */
+    /*table css (user.php) */
+    @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+    /*** Table Styles */
+    /*table end */ }
+    body .overlay:target {
+      visibility: visible;
+      opacity: 1;
+      position: absolute; }
+    body .overlay .popup {
+      margin: 0 auto;
+      background: rgba(0, 0, 0, 0.31);
+      border-radius: 5px;
+      width: 100%;
+      position: relative;
+      transition: all 0.1s ease-in-out;
+      height: auto; }
+      body .overlay .popup h2 {
+        margin-top: 0;
+        color: rgba(0, 0, 0, 0.81);
+        font-family: Tahoma, Arial, sans-serif; }
+    body .overlay .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 5em;
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff; }
+      body .overlay .close:hover {
+        color: #06D85F; }
+    body .overlay .content {
+      max-height: 100%;
+      overflow: auto;
+      width: 80%;
+      background-color: #fff;
+      color: #000;
+      margin: 5em auto 0;
+      text-align: center;
+      border-radius: 4px;
+      padding-bottom: 2em; }
+      body .overlay .content h1 {
+        font-family: "Oswald", sans-serif;
+        font-size: 3em;
+        border-bottom: 2px dotted;
+        width: 100%;
+        color: #b75b6d; }
+      body .overlay .content p {
+        color: #c47886;
+        margin: 2em auto 0;
+        font-size: 1.3em;
+        font-family: "Indie Flower", cursive; }
+      body .overlay .content small {
+        font-size: 1em;
+        font-family: "Indie Flower", cursive;
+        color: #d49da7;
+        margin-bottom: 2em; }
+    body .overlay .u-border {
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+      border: 1px solid #d2d2d2;
+      color: #666;
+      margin-bottom: 1.5em; }
+    body .overlay .u-container {
+      width: 70%;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+      margin-top: 10em;
+      vertical-align: middle;
+      line-height: 100%;
+      margin-bottom: 1em;
+      background-color: rgba(94, 162, 13, 0.4); }
+    body .overlay .u-thumb {
+      width: 100%;
+      margin: 3em auto;
+      display: block;
+      text-align: center; }
+      body .overlay .u-thumb img {
+        border-radius: 50%;
+        border: solid 10px #fff; }
+    body .overlay .u-name {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      height: 3em;
+      font-size: 1.5em;
+      color: #fff;
+      text-align: center;
+      font-family: "Merriweather", serif;
+      font-weight: 600;
+      text-shadow: 0px -3px 4px rgba(150, 150, 150, 0.85); }
+    body .overlay .u_table {
+      width: 65%; }
+    body .overlay div.table-title {
+      display: block;
+      margin: auto;
+      max-width: 600px;
+      padding: 5px;
+      width: 100%; }
+    body .overlay .table-title h3 {
+      color: #fafafa;
+      font-size: 30px;
+      font-weight: 400;
+      font-style: normal;
+      font-family: "Roboto", helvetica, arial, sans-serif;
+      text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+      text-transform: uppercase; }
+    body .overlay .table-fill {
+      background: white;
+      border-radius: 3px;
+      border-collapse: collapse;
+      height: 320px;
+      margin: auto;
+      max-width: 600px;
+      padding: 5px;
+      width: 100%;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      animation: float 5s infinite;
+      font-family: "Roboto", helvetica, arial, sans-serif;
+      margin-bottom: 5em; }
+    body .overlay th {
+      color: #5ea20d;
+      border-bottom: 4px solid #9ea7af;
+      font-size: 23px;
+      font-weight: 100;
+      padding: 24px;
+      text-align: left;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+      vertical-align: middle;
+      font-family: "Roboto", helvetica, arial, sans-serif;
+      transition: all 0.2s ease; }
+      body .overlay th:first-child {
+        border-top-left-radius: 3px; }
+      body .overlay th:last-child {
+        border-top-right-radius: 3px;
+        border-right: none; }
+    body .overlay tr {
+      border-top: 1px solid #C1C3D1;
+      border-bottom-: 1px solid #C1C3D1;
+      color: #666B85;
+      font-size: 16px;
+      font-weight: normal;
+      text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
+      transition: all 0.2s ease; }
+      body .overlay tr:hover td {
+        background: rgba(94, 162, 13, 0.75);
+        color: #FFFFFF;
+        border-top: 1px solid #C1C3D1;
+        border-bottom: 1px solid #C1C3D1;
+        font-family: "Roboto", helvetica, arial, sans-serif;
+        transition: all 0.2s ease; }
+      body .overlay tr:first-child {
+        border-top: none; }
+      body .overlay tr:last-child {
+        border-bottom: none; }
+      body .overlay tr:nth-child(odd) td {
+        background: #EBEBEB; }
+      body .overlay tr:nth-child(odd):hover td {
+        background: rgba(94, 162, 13, 0.75); }
+      body .overlay tr:last-child td:first-child {
+        border-bottom-left-radius: 3px; }
+      body .overlay tr:last-child td:last-child {
+        border-bottom-right-radius: 3px; }
+    body .overlay td {
+      background: #FFFFFF;
+      padding: 20px;
+      text-align: left;
+      vertical-align: middle;
+      font-weight: 300;
+      font-size: 18px;
+      text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+      border-right: 1px solid #C1C3D1; }
+      body .overlay td:last-child {
+        border-right: 0px; }
+    body .overlay th.text-left, body .overlay td.text-left {
+      text-align: left; }
+    body .overlay th.text-center, body .overlay td.text-center {
+      text-align: center; }
+    body .overlay th.text-right, body .overlay td.text-right {
+      text-align: right; }
+  body .input-busca {
+    width: 90%;
+    margin: 0 auto;
+    display: inline-block;
+    height: 3em;
+    border-style: none;
+    box-shadow: 0px 4px 9px -2px rgba(0, 0, 0, 0.67);
+    color: #3e3e3e; }
+  body .search-contain {
+    width: 90%;
+    margin: 1em auto;
+    display: block;
+    text-align: center; }
+  body li.c-button {
+    margin: 0 auto auto -0.2em;
+    display: inline-block; }
+    body li.c-button button {
+      width: 5em;
+      height: 3em;
+      background-color: #F25B6E;
+      border-style: none;
+      box-shadow: 0px 4px 9px -2px rgba(0, 0, 0, 0.67);
+      font-weight: bolder; }
+      body li.c-button button:hover {
+        background-color: #e61933; }
+  body #checky2:checked {
+    background-color: #000; }
+  @media only screen and (max-width: 1024px) {
+    body .menu-area {
+      height: auto; } }

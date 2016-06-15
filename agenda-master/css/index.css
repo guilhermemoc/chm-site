@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.center-content {
+  width: 100%;
+  max-width: 130em;
+  margin: 0 auto;
+  position: relative; }
+
+body {
+  width: 100%;
+  height: auto; }
+  body .head-img {
+    width: 100%;
+    height: 7em;
+    background-image: url("http://i.imgur.com/UU629uU.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-size: 2.5em; }
+  body .head-text {
+    text-align: center;
+    width: 100%;
+    font-size: 5em;
+    color: #fff;
+    font-family: "Oswald", sans-serif; }
+  body .head-btn {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    background-color: #ff5a60;
+    border-style: none;
+    margin: -3em auto;
+    display: block;
+    text-align: right;
+    position: absolute;
+    right: 7em;
+    transition: all 0.3s ease-in-out;
+    content: f067;
+    font-family: FontAwesome; }
+    body .head-btn i {
+      color: #fff;
+      text-align: center;
+      color: #fff;
+      text-align: center;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      font-size: 2.5em;
+      font-style: normal; }
+    body .head-btn:hover {
+      box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.38); }
+  body .main-content {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    text-align: center; }
+  body .list ul {
+    width: 100%;
+    height: auto;
+    background-color: #dcdbdb;
+    text-align: center;
+    margin: 0 auto;
+    display: block; }
+    body .list ul li {
+      display: inline-block;
+      width: 25%;
+      height: auto;
+      margin: 2.5em;
+      text-align: justify;
+      vertical-align: top;
+      font-family: "Oswald", sans-serif;
+      font-size: 1em;
+      line-height: 1.6em;
+      font-family: FontAwesome;
+      font-style: normal; }
+      body .list ul li h1 {
+        color: #333333;
+        font-size: 1.8em;
+        margin-bottom: 0.5em; }
+        body .list ul li h1 i.fa.fa-share-alt-square {
+          display: inline-block;
+          font-weight: 800;
+          font-size: 0.9em;
+          font-family: "Oswald", sans-serif; }
+      body .list ul li p {
+        color: #737373;
+        font-family: "Oswald", sans-serif; }
+  @media only screen and (max-width: 1024px) {
+    body .head-text {
+      font-size: 1.5em; }
+    body .head-btn {
+      width: 4em;
+      height: 4em; }
+    body .list ul {
+      width: 100%; } }
+
+@media only screen and (max-width: 768px) {
+  body .list ul li {
+    width: 90%;
+    text-align: center;
+    margin: 1.5em auto; } }

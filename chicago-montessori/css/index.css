@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.center-content {
+  width: 100%;
+  max-width: 130em;
+  margin: 0 auto;
+  position: relative; }
+
+body {
+  width: 100%;
+  height: auto; }
+
+  .main-block{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    height: auto;
+  }
+
+  .landing{
+    /*background-image: url('../img/main-bg.jpg');*/
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+  }
+
+
+  .landing h1{
+  font-size: 4em;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+  z-index: 99999999;
+  text-align: center;
+  margin: 3em 0 0.2em auto;
+  }
+
+  .landing small{
+    font-size: 2em;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    }
+
+
+    .parallax-window{
+    height: 100vh;
+    }
+
+  .about{
+    background-color: #fff;
+
+  }
+
+  .about ul{
+    width: 100%;
+    display: block;
+  }
+
+  .about li{
+    width: 33.5%;
+    height: 27em;
+    display: inline-block;
+    background-color: #005CAB;
+    margin: 0 -0.2em;
+    text-align: justify;
+    color: #fff;
+    vertical-align: middle;
+    }
+
+  .about li:nth-child(2){
+    background-color: #0092B5;
+    margin: 0 -0.2em;
+    }
+
+    .about li:nth-child(3){
+      background-color: #FF9529;
+      margin: 0 -0.2em;
+      }
+      .about li p{
+        color: #fff;
+        font-size: 1.5em;
+        width: 80%;
+        margin: 1em auto;
+        font-family: 'Poiret One', cursive;
+      }
+
+      .about li h1{
+        font-size: 3em;
+        color: #fff;
+        text-align: center;
+        margin: 1em auto;
+        font-family: 'Oswald', sans-serif;
+      }
+
+    .why-us{
+      background-image:url('http://i.imgur.com/GJ0qFEc.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      width: 100%;
+      background-color: #fff;
+      position: absolute;
+    }
+
+
+
+
+    .why-us h1{
+      font-family: 'Oswald', sans-serif;
+      font-size: 4em;
+      text-align: left;
+      margin: 3em;
+      color: #fff;
+    }
+
+    .btn01{
+      width:9em;
+      height: 2.5em;
+      background-color:#000;
+      color: #fff;
+      margin: 0 auto;
+      display: block;
+      border-style: none;
+      outline: none;
+      transition: all 1s ease;
+      border: 2px solid #000;
+      font-family: 'Poiret One', cursive;
+      font-size: 1.2em;
+    }
+    .btn01:hover{
+    background-color: rgba(255, 255, 255, 0.17);
+    border: 2px solid #000;
+    cursor: pointer;
+
+    }
+
+
+    .rounded{
+    width: 10em;
+    height: 10e
+
+
+    border-radius: 100%;
+    background-color: #fff;
+    text-align: right;
+}
+
+
+
+/*http://i.imgur.com/GJ0qFEc.jpg*/
+
+
+  @media only screen and (max-width: 500px) and (min-width: 100px) {
+
+  .about li {
+    width: 100%;}
+  }

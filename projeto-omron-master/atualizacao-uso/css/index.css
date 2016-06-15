@@ -1,0 +1,101 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+.center-content {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  height: auto;
+  text-align: center; }
+
+body {
+  width: 100%;
+  height: auto;
+  background-color: #000; }
+  body .btn_circle {
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    background-color: #3CB6A1;
+    border-style: none;
+    margin: 6em auto;
+    text-align: center;
+    /* Hover tooltips */ }
+  body .field-tip {
+    position: relative;
+    cursor: help; }
+    body .field-tip .tip-content {
+      position: absolute;
+      top: -10px;
+      /* - top padding */
+      right: 9999px;
+      width: 200px;
+      margin-right: -220px;
+      /* width + left/right padding */
+      padding: 10px;
+      color: #fff;
+      background: #333;
+      -webkit-box-shadow: 2px 2px 5px #aaa;
+      -moz-box-shadow: 2px 2px 5px #aaa;
+      box-shadow: 2px 2px 5px #aaa;
+      opacity: 0;
+      -webkit-transition: opacity 250ms ease-out;
+      -moz-transition: opacity 250ms ease-out;
+      -ms-transition: opacity 250ms ease-out;
+      -o-transition: opacity 250ms ease-out;
+      transition: opacity 250ms ease-out; }
+      body .field-tip .tip-content:before {
+        content: " ";
+        /* Must have content to display */
+        position: absolute;
+        top: 50%;
+        left: -16px;
+        /* 2 x border width */
+        width: 0;
+        height: 0;
+        margin-top: -8px;
+        /* - border width */
+        border: 8px solid transparent;
+        border-right-color: #333; }
+    body .field-tip:hover .tip-content {
+      right: -20px;
+      opacity: 1; }
+  body .mapa {
+    width: 100%;
+    height: 30em;
+    margin: 5em auto;
+    text-align: center;
+    background-color: #fff; }
+  body #map {
+    height: 30em;
+    width: 100%;
+    margin: 5em auto;
+    text-align: center;
+    background-color: #fff; }
+  body .pesquisa {
+    width: 80%;
+    margin: 13em auto 1em auto;
+    display: inline-block;
+    height: 4em;
+    border-radius: 4px;
+    border-style: none;
+    font-size: 1em;
+    color: #154053; }
+  body #btn-srch {
+    width: 8em;
+    height: 4.8em;
+    background-color: #154053;
+    content: "";
+    border-radius: 4px;
+    border-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: FontAwesome;
+    color: #fff; }
+
+body .pesquisa {
+  width: 50%; }
+body #btn-srch {
+  width: 6em; }

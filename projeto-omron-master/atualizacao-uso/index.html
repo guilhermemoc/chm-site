@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+    <title>GM Main html</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+
+    <!-- Font Awesome base (minified) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- viewport settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+</head>
+
+
+<body>
+
+
+  <!-- optional  -->
+<section class="center-content">
+
+
+<!--tooltips -->
+<button class="btn_circle field-tip" name="button">
+
+  <!-- hover tooltips -->
+  <span class="field-tip">
+      <span class="tip-content">Put help text in here!</span>
+  </span>
+    <!-- hover tooltips -->
+
+</button>
+<!--tooltips -->
+
+
+
+<!-- google maps api -->
+<input type="text" class="pesquisa" id="autocomplete" name="autocomplete" placeholder="Digite um endereço para encontrar os locais de vacinação...">
+
+</input>
+<button type="submit" class="button" id="btn-srch" onclick="ga('send', 'event', 'Mapa', 'Procurar', 'Clinicas', '1');">
+<i class="fa fa-search" aria-hidden="true"></i>
+  Pesquisar</button>
+
+
+  </section>
+<div class="map" id="mapa" style="height:15em;">
+
+</div>
+
+<!-- google maps api -->
+
+<script src="js/maps.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDb-n7KCs2HEabp1jRSU7rG9DNXrUY1zYo&amp;callback=initMap&amp;libraries=places"></script>
+</body>
